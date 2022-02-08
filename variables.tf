@@ -15,3 +15,15 @@ variable "force_destroy_state" {
   default     = true
   type        = bool
 }
+
+variable "region" {
+  description = "AWS Region in which the Buckets will be created"
+  default = "ap-south-1"
+  type = string
+}
+
+variable "profile" {
+  description = "AWS Profile used"
+  default = "default"
+  type = string
+}

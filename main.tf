@@ -1,6 +1,6 @@
 provider "aws" {
-  region = "ap-south-1"
-  profile = "swinkler"
+  region = var.region
+  profile = var.profile
 }
 
 data "aws_region" "current" {}
